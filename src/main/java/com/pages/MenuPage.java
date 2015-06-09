@@ -47,9 +47,9 @@ public class MenuPage extends PageObject {
 		search.click();
 	}
 	
-	public void press_SearchDropdown(){
-		searchDropdown.click();
-	}
+//	public void press_SearchDropdown(){
+//		searchDropdown.click();
+//	}
 	
 	public void press_SearchImg(){
 		searchImg.click();
