@@ -10,38 +10,38 @@ import net.thucydides.core.pages.PageObject;
 public class SearchPage extends PageObject {
 	
 	@FindBy (css="[id='ctl00_ctl00_ctl01_ad_tab_car']")
-	private WebElement autoSection;
+	private WebElement autoTab;
 	
 	@FindBy (css="[id='ctl00_ctl00_ctl01_ad_tab_bike']")
-	private WebElement bikeSection;
+	private WebElement bikeTab;
 	
 	@FindBy (css="[id='ctl00_ctl00_ctl01_ad_tab_transport']")
-	private WebElement transportSection;
+	private WebElement transportTab;
 	
 	@FindBy (css="[id='ctl00_ctl00_ctl01_ad_tab_utilaje']")
-	private WebElement utilajeSection;
+	private WebElement utilajeTab;
 	
 	@FindBy (css="[id='ctl00_ctl00_ctl01_ad_tab_accessories']")
-	private WebElement accessoriesSection;
+	private WebElement accessoriesTab;
 	
 	@FindBy (css="[id='ctl00_ctl00_ctl01_lbSearch']")
 	private WebElement cautaButton;
 
 	
 	public void clickAutoSection() {
-		autoSection.click();
+		autoTab.click();
 	}
 	public void clickBikeSection() {
-		bikeSection.click();
+		bikeTab.click();
 	}
 	public void clickTransportSection() {
-		transportSection.click();
+		transportTab.click();
 	}
 	public void clickUtilajeSection() {
-		utilajeSection.click();
+		utilajeTab.click();
 	}
 	public void clickAccessoriesSection() {
-		accessoriesSection.click();
+		accessoriesTab.click();
 	}
 	public void clickCautaButton() {
 		cautaButton.click();
