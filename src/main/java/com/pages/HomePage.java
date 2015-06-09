@@ -10,7 +10,7 @@ import net.thucydides.core.pages.PageObject;
 public class HomePage extends PageObject{
 
 	@FindBy(css="[name*='Marca']")
-	private WebElementFacade makeDropdown;
+	private WebElementFacade brandDropdown;
 	
 	@FindBy(css="[name*='txtModel']")
 	private WebElementFacade modelDropdown;
@@ -28,7 +28,7 @@ public class HomePage extends PageObject{
 	private WebElementFacade fuelTypeDropdown;
 	
 	@FindBy(css="[value='Search']")
-	private WebElementFacade search;
+	private WebElementFacade searchButton;
 	
 	@FindBy(css="[id='bike_icon']")
 	private WebElementFacade bikeIcon;
@@ -43,8 +43,8 @@ public class HomePage extends PageObject{
 	private WebElementFacade diverseIcon;
 	
 	
-	public void selectMake(String option){
-		makeDropdown.selectByVisibleText(option);
+	public void selectBrand(String option){
+		brandDropdown.selectByVisibleText(option);
 	}
 	
 	public void selectModel(String option){
@@ -68,7 +68,7 @@ public class HomePage extends PageObject{
 	}
 	
 	public void clickSearch(){
-		search.click();
+		searchButton.click();
 	}
 	
 	public void clickMotorcycle(){
