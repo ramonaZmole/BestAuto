@@ -17,7 +17,7 @@ public class MenuPage extends PageObject {
 	
 	@FindBy(css=" a[title='Contact']")
 	private WebElement contact;
-
+	
 	@FindBy(css="input[id='homeSearch']")
 	private WebElement search;
 	
@@ -47,9 +47,10 @@ public class MenuPage extends PageObject {
 		search.click();
 	}
 	
-	public void press_SearchDropdown(){
-		searchDropdown.click();
-	}
+//	public void press_SearchDropdown(){
+//	  element(nextButton).waitUntilVisible();
+//		searchDropdown.click();
+//	}
 	
 	public void press_SearchImg(){
 		searchImg.click();
@@ -60,7 +61,6 @@ public class MenuPage extends PageObject {
 	}
 	
 	 public void press_Cautare() {
-//		  element(nextButton).waitUntilVisible();
 		  cautare.click();
 		 }
 	
@@ -76,14 +76,18 @@ public class MenuPage extends PageObject {
 		dealer.click();
 	}
 	
-	
-
-	
-	public class assignedToMe{
-		String EmployeeName;
-		String StartDate;
-		String EndDate;
-		String DaysNumber;
-		String Type;
+	public void get_SearchDropdown(String elem){
+	List<String> searchList= new ArrayList<String>();
+	//	    boolean found=false;
+	for(WebElement item:searchDropdown){
+		//		 if (item.getText().contains(elem)){
+		//			 found=true;
+		//		 }
+		//	 }
+		//		Assert.assertTrue("Name doesn't found", found);
+		searchList.add(item.getText());
+		System.out.println("Search types:"+ item.getText());
 	}
+}
+
 }
