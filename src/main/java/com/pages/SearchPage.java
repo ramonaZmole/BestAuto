@@ -6,7 +6,7 @@ import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.PageObject;
-
+@DefaultUrl("http://www.bestauto.ro/vanzari-auto-piata-auto-cautari.htm")
 public class SearchPage extends PageObject {
 	
 	@FindBy (css="[id='ctl00_ctl00_ctl01_ad_tab_car']")

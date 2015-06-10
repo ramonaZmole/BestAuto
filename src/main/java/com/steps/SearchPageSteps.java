@@ -20,6 +20,10 @@ public class SearchPageSteps extends ScenarioSteps {
 	SearchPage searchPageSteps;
 	
 	@Step
+	public void homePage(){
+		searchPageSteps.open();
+	}
+	@Step
 	public void clickAutoTab() {
 		searchPageSteps.clickAutoTab();
 	}
