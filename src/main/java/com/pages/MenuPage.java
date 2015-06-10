@@ -25,7 +25,7 @@ public class MenuPage extends PageObject {
 	private List<WebElement> searchDropdown;
 	
 	@FindBy(css="div[id='homeSearchButton'] img[src]")
-	 private WebElementFacade searchImg;
+	 private WebElementFacade searchImages;
 
 	@FindBy(css="div[id='logoPowerd'] a[href]]")
 	private WebElement bestAutoLogo;
@@ -52,8 +52,8 @@ public class MenuPage extends PageObject {
 //		searchDropdown.click();
 //	}
 	
-	public void clickSearchImg(){
-		searchImg.click();
+	public void clickSearchImages(){
+		searchImages.click();
 	}
 
 	public void clickBestAutoLogo(){
