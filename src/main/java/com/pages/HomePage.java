@@ -67,7 +67,7 @@ public class HomePage extends PageObject{
 		fuelTypeDropdown.selectByVisibleText(option);
 	}
 	
-	public void clickSearch(){
+	public void clickSearchButton(){
 		searchButton.click();
 	}
 	
@@ -83,7 +83,7 @@ public class HomePage extends PageObject{
 		utilajeIcon.click();
 	}
 	
-	public void clickDiverse(){
+	public void clickDiverseIcon(){
 		diverseIcon.click();
 	}
 }
