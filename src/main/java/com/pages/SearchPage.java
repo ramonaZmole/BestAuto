@@ -28,19 +28,19 @@ public class SearchPage extends PageObject {
 	private WebElement cautaButton;
 
 	
-	public void clickAutoSection() {
+	public void clickAutoTab() {
 		autoTab.click();
 	}
-	public void clickBikeSection() {
+	public void clickBikeTab() {
 		bikeTab.click();
 	}
-	public void clickTransportSection() {
+	public void clickTransportTab() {
 		transportTab.click();
 	}
-	public void clickUtilajeSection() {
+	public void clickUtilajeTab() {
 		utilajeTab.click();
 	}
-	public void clickAccessoriesSection() {
+	public void clickAccessoriesTab() {
 		accessoriesTab.click();
 	}
 	public void clickCautaButton() {
