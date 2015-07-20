@@ -9,7 +9,7 @@ import net.thucydides.core.pages.PageObject;
 @DefaultUrl("http://www.bestauto.ro/")
 public class HomePage extends PageObject{
 
-	@FindBy(css="[name*='Marca']")
+	@FindBy(id="ctl00_ctl00_ctl01_ddlMarca")
 	private WebElementFacade brandDropdown;
 	
 	@FindBy(css="[name*='txtModel']")
@@ -27,7 +27,7 @@ public class HomePage extends PageObject{
 	@FindBy(css="[name*='Fuel']")
 	private WebElementFacade fuelTypeDropdown;
 	
-	@FindBy(css="[value='Search']")
+	@FindBy(css="[value*='Cauta']")
 	private WebElementFacade searchButton;
 	
 	@FindBy(css="[id='bike_icon']")

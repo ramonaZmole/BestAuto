@@ -1,13 +1,18 @@
 package com.steps;
 
-import com.pages.HomePage;
-
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
+
+import com.pages.HomePage;
 
 public class HomeSteps extends ScenarioSteps{
 
 	HomePage  homePage;
+	
+	@Step
+    public void is_the_home_page() {
+        homePage.open();
+    }
 	
 	@Step
 	public void selectBrand(String option){
