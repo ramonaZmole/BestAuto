@@ -47,4 +47,14 @@ public class SearchPageSteps extends ScenarioSteps {
 	public void clickCautaButton() {
 		searchPageSteps.clickCautaButton();
 	}
+	@Step
+	public void selectCategoryDropdown(String option) {
+		searchPageSteps.selectCategoryDropdown(option);
+	}
+	@Step
+	public void selectCarStatusDropdown(String option) {
+		searchPageSteps.selectCarStatusDropdown(option);
+	}
+	
+	
 }
